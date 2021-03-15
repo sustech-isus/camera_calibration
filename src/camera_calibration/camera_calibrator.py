@@ -93,7 +93,7 @@ class DisplayThread(threading.Thread):
                 self.image = self.queue.get()
                 # TODO
                 # print(self.opencv_calibration_node.c.alpha,self.opencv_calibration_node.c.beta)
-                 cv2.imshow("display", self.image)
+                cv2.imshow("display", self.image)
             else:
                 time.sleep(0.1)
             k = cv2.waitKey(6) & 0xFF
